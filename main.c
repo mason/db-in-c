@@ -80,7 +80,7 @@ const uint32_t EMAIL_SIZE = size_of_attribute(Row, email);
 #define ROWS_PER_PAGE (PAGE_SIZE / ROW_SIZE)
 #define TABLE_MAX_ROWS (ROWS_PER_PAGE * TABLE_MAX_PAGES)
 
-void print_prompt() { printf("db >"); }
+void print_prompt() { printf("db > "); }
 
 void print_row(Row* row) {
     printf("(%d, %s, %s)\n", row->id, row->username, row->email);
